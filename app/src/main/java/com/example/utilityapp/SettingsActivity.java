@@ -31,12 +31,16 @@ public class SettingsActivity extends AppCompatActivity {
 
     public void doneClicked(View view) {
         EditText et;
+        int emptyCounter = 0;
 
         et = findViewById(R.id.waterAmount);
+
+        // If one value is entered and the others are not, the others are set to DEFAULT values
         if (et.length() != 0)
         {water = getInt(et);}
         else {
             water = defaultMax;
+            emptyCounter++;
         }
 
         et = findViewById(R.id.cupAmount);
@@ -44,6 +48,7 @@ public class SettingsActivity extends AppCompatActivity {
         {cup = getInt(et);}
         else {
             cup = defaultSmall;
+            emptyCounter++;
         }
 
         et = findViewById(R.id.bottleAmount);
@@ -51,9 +56,14 @@ public class SettingsActivity extends AppCompatActivity {
         {bottle = getInt(et);}
         else {
             bottle = defaultLarge;
+            emptyCounter++;
         }
         System.out.println(bottle);
 
+        // If no values are entered, settings are unchanged
+        if (emptyCounter == 3) {
+            emptyIntent();
+        }
         sendIntent();
 
 
@@ -87,5 +97,9 @@ public class SettingsActivity extends AppCompatActivity {
         cup = defaultSmall;
         bottle = defaultLarge;
         sendIntent();
+    }
+
+    private void emptyIntent() {
+        finish();
     }
 }
