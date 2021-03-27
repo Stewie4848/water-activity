@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    tools:context=".WaterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/water_tracker"
+        android:textColor="@color/aqua"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="settingsClicked"
+            android:text="@string/settings" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="waterClear"
+            android:text="@string/clear"
+            android:visibility="gone"
+
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="12">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/waterAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/waterfill" />
+
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Hello World!"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ProgressBar
+            android:id="@+id/waterProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:progress="0"
+
+            />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="14">
+
+        <ImageButton
+            style='@style/Widget.AppCompat.Button'
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/waterglass"
+            android:backgroundTint="@color/aqua"
+            android:backgroundTintMode="multiply"
+            android:contentDescription="@string/glass_of_water"
+            android:onClick="addWaterSmall" />
+
+        <ImageButton
+            style='@style/Widget.AppCompat.Button'
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/waterbottle"
+            android:backgroundTint="@color/aqua"
+            android:backgroundTintMode="multiply"
+            android:contentDescription="@string/bottle_of_water"
+            android:onClick="addWaterLarge" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5sp"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="@color/aqua"
+            android:gravity="center"
+            android:onClick="waterClear"
+            android:padding="40sp"
+            android:text="@string/clear" />
+    </TableRow>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

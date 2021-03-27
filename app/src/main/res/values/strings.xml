@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UtilityApp</string>
+    <string name="black">#032949</string>
+    <string name="aqua">#179fd0</string>
+    <string name="clear">Clear</string>
+    <string name="glass_of_water">glass of water</string>
+    <string name="bottle_of_water">bottle of water</string>
+    <string name="congratulations">Well done you drank all your water for today!</string>
+    <string name="water_tracker">Water Tracker</string>
+    <string name="settings">Settings</string>
+    <string name="set_amount_of_water_in_a_bottle_ml">Set amount of water in a bottle (mL)</string>
+
+    <string name="set_amount_of_water_in_a_cup_ml">Set amount of water in a cup (mL)</string>
+
+    <string name="set_amount_of_water_to_drink_ml">Set amount of water to drink (mL)</string>
+    <string name="done">Done</string>
+    <string name="cups_bottle_left">You have %d cups left or %d bottles left</string>
+    <string name="default_text">Default</string>
+    <string name="default_bottle">bottle_amount</string>
+    <string name="default_cup">cup_amount</string>
+    <string name="default_water">water_amount</string>
+</resources>

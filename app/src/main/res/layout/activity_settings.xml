@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical"
+
+    >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:onClick="doneClicked"
+        android:text="@string/done" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_amount_of_water_to_drink_ml"
+        android:textSize="25sp"
+
+
+        />
+
+    <EditText
+        android:labelFor="@+id/waterAmount"
+        android:id="@+id/waterAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:ems="10"
+        android:inputType="number"
+        android:onClick="clearText"
+        android:textColor="@color/gray"
+        android:autofillHints="@string/default_water" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_amount_of_water_in_a_cup_ml"
+        android:textSize="25sp"
+
+
+        />
+
+    <EditText
+        android:labelFor="@+id/cupAmount"
+        android:id="@+id/cupAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:ems="10"
+        android:inputType="number"
+        android:onClick="clearText"
+        android:textColor="@color/gray"
+        android:autofillHints="@string/default_cup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_amount_of_water_in_a_bottle_ml"
+        android:textSize="25sp"
+
+
+        />
+
+    <EditText
+        android:labelFor="@+id/bottleAmount"
+        android:id="@+id/bottleAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:ems="10"
+        android:inputType="number"
+        android:onClick="clearText"
+        android:textColor="@color/gray"
+        android:autofillHints="@string/default_bottle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="defaultClicked"
+        android:text="@string/default_text" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
