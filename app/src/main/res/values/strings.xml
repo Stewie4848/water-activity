@@ -19,4 +19,5 @@
     <string name="default_bottle">bottle_amount</string>
     <string name="default_cup">cup_amount</string>
     <string name="default_water">water_amount</string>
+
 </resources>
