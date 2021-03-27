@@ -11,7 +11,24 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void testDefaults() {
+        Water water = new Water();
+        assertEquals(2000, water.max);
+        assertEquals(600, water.large);
+        assertEquals(250, water.small);
+    }
+
+    @Test
+    public void testWaterAddition() {
+        Water water = new Water();
+        water.percent = water.small + water.percent;
+        assertEquals(250, water.percent);
+        System.out.println(water.percent);
+        water.percent = 0;
+        water.percent = water.large + water.percent;
+
+        assertEquals(600, water.percent);
+        System.out.println(water.percent);
+
     }
 }
